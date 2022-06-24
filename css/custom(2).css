@@ -1,0 +1,726 @@
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans'); */
+/*
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
+from style.css to this file, and modify it to your liking. */
+
+
+/* GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+#top {
+background-color: #EDF3F9;
+}
+
+#menu-item-6182 > a:hover {
+text-decoration:underline;
+}
+
+/* captions */
+.entry .wp-caption-text {
+    margin: 0 0 0.3em;
+    padding: 0;
+    font: 12px "Merriweather Sans", sans-serif;
+	line-height: 0.9em;
+    text-align: center;
+	font-weight: bold;
+}
+/*  TOP NAV increase size of social media icons */
+#menu-item-6060 > a > i, #menu-item-6061 > a > i, #menu-item-6292 > a > i {
+font-size: 16px;
+}
+
+#menu-item-7935, #menu-item-6182, #menu-item-6031, #menu-item-6282, #menu-item-6180, #menu-item-6181 {
+margin-bottom:3px;
+}
+
+ #menu-item-6058 {
+margin-bottom:1px;
+}
+
+#menu-item-6058 > span > i {
+font-size: 15px;
+}
+
+
+/* move the search box to the front */
+
+#ubermenu-top_nav-26-top-menu-2 {
+    z-index:9500;
+position: relative;
+}
+
+
+/* search box font */
+#menu-item-6059 > div > div > form > input.ubermenu-search-input {
+padding-left:10px;
+padding-right:10px;
+font-size:12px;
+font-family: "Merriweather Sans", sans;
+color:#666666;
+}
+
+.ubermenu-search input[type=submit] {
+color:#666666 !important;
+}
+
+/* hide meta data on search results */
+.search-results .p-meta { 
+display: none; 
+}
+
+
+/* align top menu to right */
+#top-nav {
+float: right;
+}
+
+/* ShiftNav mobile menu styles */
+
+.shiftnav{
+font-family: "Merriweather Sans", sans;
+}
+
+#shiftnav-toggle-main > div.shiftnav-main-toggle-content.shiftnav-toggle-main-block > a > img {
+vertical-align:middle;
+}
+
+@media only screen and (max-width: 960px) {
+  #header {
+    display: none;
+  }
+}
+
+/*.shiftnav-main-toggle-content,
+.shiftnav-main-toggle-content img{
+  vertical-align:bottom;
+}
+.shiftnav-main-toggle-content a{
+  padding-left:5px;
+}
+*/
+
+/* Remove breadcrumbs from  home page */
+
+.home .breadcrumb {
+display: none;
+}
+
+#content {
+margin-top:25px;
+}
+
+/* change slider height */
+
+/* actual image right now is 262px high */
+
+#loopedSlider .content  {
+display:none;
+}
+
+#loopedSlider {
+/* max-height: 262px; */
+/* was 274px */
+}
+
+/* slider nav arrows */
+
+#loopedSlider > ul.flex-direction-nav > li.flex-nav-next > a {
+color: rgba(255, 255, 255, 0.7);
+}
+
+#loopedSlider > ul.flex-direction-nav > li.flex-nav-prev > a {
+color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+/* opening post on home page */
+
+.post-6063 {
+	font-size: 1.8em;
+		}
+#main > article.post-6063.post.type-post.status-publish.format-standard.hentry.category-news > section > p > span:nth-child(1)  {
+	color: #446880;
+}
+
+#main > article.post-6063.post.type-post.status-publish.format-standard.hentry.category-news > section > p > span:nth-child(2) {
+	color: #446880;
+}
+
+/* remove left padding from section nav */
+#advanced_sidebar_menu-3 {
+padding-top:0;
+padding-left:0;
+padding-right:0;
+}
+
+/* widget buttons */
+
+.widget-button {
+    background-color: #d8770e;
+    font-size:16px; padding: 8px 16px;
+    border-radius: 16px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    text-decoration:none;
+    width:130px;
+}
+
+
+a.widget-button:link  {
+    text-decoration:none;
+    color: #ffffff;
+}
+
+a.widget-button:visited {
+    color: #ffffff;
+        text-decoration:none;
+}
+
+a.widget-button:hover  {
+        background-color:#28404C;
+}
+
+/* donate widget button */
+#text-2 > div > p > a > i {
+margin-right:13px;
+}
+
+.widget-button-donate {
+    background-color: #d8770e;
+    font-size:16px; padding: 8px 16px;
+    border-radius: 16px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    text-decoration:none;
+    width:170px;
+}
+
+a.widget-button-donate:link {
+    text-decoration:none;
+    color: #ffffff;
+}
+
+ a.widget-button-donate:visited {
+    color: #ffffff;
+        text-decoration:none;
+}
+
+a.widget-button-donate:hover {
+        background-color:#28404C;
+}
+
+
+/* member widget */
+
+
+#sidebar #text-6  {
+/* background-color: #f7fbfc; */
+background-color: #FCF5E6;
+
+}
+#sidebar #text-6 h3 {
+color: #004f2d;
+}
+
+#sidebar #text-6  p {
+font-size: 14px;
+color: #446880;
+font-weight:bold;
+}
+
+#sidebar #text-6 .fa {
+margin-right:13px;
+color: #446880
+}
+
+
+/* career widget */
+
+#sidebar #text-5  {
+background-color: #FCF5E6;
+
+/* background-color: #F1EEE4; */
+
+}
+
+#sidebar #text-5 h3 {
+color: #004f2d;
+}
+
+
+
+
+/* generic widget selector
+#sidebar .widget  {
+background-color: #fff;
+border: 1px solid #ddd;
+padding: 10px;
+}
+*/
+
+#text-6 > div > p:nth-child(4) > a > span {
+    font-family: "Merriweather Sans", sans;
+    color: #ffffff;
+line-height: 1.0em;
+}
+
+/*footer widgets */
+#text-4, #text-2 {
+padding-top:0px;
+}
+
+
+/* home page spacing after first article */
+#main > article.post-6082.post.type-post.status-publish.format-standard.hentry.category-news {
+margin-bottom:0px;
+padding-bottom:0px;
+}
+
+
+/* styles for Jobs list on home page */
+
+#job_listings_all {
+	border: 1px solid #446880;
+	padding: 7px;
+background-color: #EDF1F4;
+}
+
+/* jobs widget */
+
+#job_listings_all p.jt_recentjobs_head {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #446880;
+	margin-bottom: 0.3em;
+	margin-top: 0;
+}
+
+div.jt_job {
+	margin-bottom: 0.5em;
+	font-size: 1em;
+}
+
+div.jt_job_position > a {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.jt_job_location {
+	display: inline;
+}
+
+
+.jt_job_company {
+font-style: italic;
+	font-size: 1em;
+	margin-left: 5px;
+	border-left: solid 1px;
+	padding-left: 5px;
+		display: inline;
+
+}
+
+.jt_alljobs {
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 5px;
+	}
+	
+.jt_alljobs:after {
+	content: "\f08e";
+	font-family: FontAwesome;
+	color: #446880;
+	padding-left:5px;
+	/* more styling for the icon, including color, font-size, positioning, etc. */
+}
+
+/* .jt_row2 {
+background-color: #9ab0be;
+}
+*/
+
+.jt_post_a_job_button {
+    background-color: #446880; 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    margin-left: 10px;
+margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+font-weight: bold;
+    font-size: 16px;
+	display: block;
+}
+
+.jt_post_a_job_button a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* move nav to right of logo */
+@media only screen and (min-width: 768px) {
+    #navigation { 
+        float: right !important; 
+        width: auto !important; 
+        clear:none; 
+        max-width: 800px; /* This can be changed */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #navigation {
+        /*left: -34px !important;*/
+    }
+}
+
+
+/* footer icons */
+
+.footer-icons {
+font-size: 14px;
+margin-left:6px;
+}
+
+/* formatting List Category Posts lists for Member News and Reading List */
+
+.lcp_catlist {
+list-style-type: none !important;
+list-style-position: inside !important;
+}
+  
+
+
+
+/* global font styles */
+
+
+#main-sidebar-container p, ul, li {
+line-height: 1.8em;
+}
+
+
+
+#main ul {
+list-style-type: disc;
+}
+
+
+/* add underline to links */
+
+
+a:link {
+text-decoration: underline;
+}
+
+/* home page headers */
+
+.magazine .block .post .title a
+ {
+    font-size: 22px;
+    font-family: "Merriweather Sans", sans;
+    color: #d8770e;
+line-height: 1.0em;
+}
+
+/*Hide meta data on home page posts */
+
+.category-news .post-meta {
+    display: none;
+}
+
+
+.category-news .post-more {
+    display: none;
+}
+
+#main > article.post-6082.post.type-post.status-publish.format-standard.hentry.category-news > div.post-meta {
+    display: none;
+}
+
+
+/*lefthand nav links */
+
+/* .advanced-sidebar-menu {
+background-color: #f1f0ea;
+}
+*/
+
+#advanced_sidebar_menu-3-wrap > ul.parent-sidebar-menu > li > a {
+   pointer-events: none;
+   cursor: default;
+   font-size: 16px;
+   font-weight: bold;
+   color: #004f2d;
+}
+
+.parent-sidebar-menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#advanced_sidebar_menu-3-wrap > ul > li > ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#advanced_sidebar_menu-3-wrap > ul > li > ul > li {
+padding-top:10px;
+line-height:10px;
+padding-left: 0px;
+margin-left: 0px;
+text-indent: 0px;
+border-top:solid 1px #E6E9EA;
+margin-top:6px;
+padding-top:6px;
+}
+
+
+/*
+
+#loopedSlider.magazine-slider .content p, #loopedSlider.magazine-slider .content h2
+background-color: rgba(255, 255, 255, 0.7)
+*/
+
+/*Increase the width of the text on Sliders
+
+#loopedSlider div.content {
+max-width: 500px;
+text-align: left;
+}
+*/
+
+/*Change slider content location
+
+#loopedSlider .content p {
+max-width: 623px;
+}
+
+#loopedSlider .content {
+background: none repeat scroll 0 0 transparent;
+right: 0px;
+position: absolute;
+top: 150px;
+}
+*/
+/*Slider arrows */
+
+/*
+a.flex-prev, a.flex-next {
+display: none;
+margin-top:177px;
+}
+*/
+
+/*
+a.flex-prev:before, a.flex-next:before, #post-gallery .pagination .jcarousel-prev:before, #post-gallery .pagination .jcarousel-next:after {
+color: rgba(255, 255, 255, 0.6);
+font-size: 24px;
+left: 0;
+position: absolute;
+top: 2px;
+}
+*/
+
+
+/*Change slider content font
+
+.magazine #loopedSlider .content .excerpt p {
+    font: normal 15px/1.6em 'Merriweather', serif;
+    color: #000000;
+}
+*/
+
+/*Change slider content background color
+
+#loopedSlider.magazine-slider .content p, #loopedSlider.magazine-slider .content h2 {
+background-color: rgba(255, 255, 255, 0.7);
+}
+*/
+
+/* get post IDs to change specific post formatting 
+for example:
+.postid-2279
+
+*/
+
+
+/* Reduce space between Primary Navigation Menu and Slider 
+
+#navigation {
+margin-bottom: 0px;
+}
+
+*/
+/* Remove the words ‘You are here’ in breadcrumbs 
+
+.breadcrumb-title {
+display: none;
+}
+*/
+
+	
+	
+	
+/*reading list post styles */
+
+.readinglistthumb {
+float:right;
+margin-left:5px;
+margin-bottom:5px;
+margin-top:5px;
+
+}	
+
+ul.lcp_catlist {
+padding:0;
+list-style:none;
+}
+
+
+/*footers */
+
+/* #footer-widgets {
+background-color:#f9f9f9;
+}	
+
+/* search results */
+.archive_header {
+    font-family: "Merriweather Sans", sans;
+}
+#main > article > header > h2 > a   {
+color: #446880;
+text-decoration: underline;
+font-size:20px;
+}
+
+.read-more {
+    font-family: "Merriweather Sans", sans;
+    font-weight: bold;
+}
+
+/* Resources */
+
+/* Newsletter Page */
+
+.newsletterpage_resource_type {
+font-size: 11px;
+color: #666666; 
+margin-bottom: 0px; 
+margin-top: 19px; 
+padding-top: 4px; 
+border-top: solid 1px #e2e2e2;
+text-transform: uppercase;
+
+}
+
+.newsletterpage_resource_type > a {
+color: #666666; 
+text-decoration:none; 
+}
+
+.newsletterpage_resource_type > a:hover {
+color: #666666; 
+text-decoration:underline; 
+}
+.newsletterpage_article_head {
+margin-top:2px;
+margin-bottom: 0px; 
+font-size: 18px; 
+font-style: normal; 
+font-weight: bold;
+line-height: 21px;
+font-family: 'Merriweather', serif;
+}
+
+.newsletterpage_article_head > a {
+text-decoration: none;
+}
+
+#newsletterpage_author_data {
+font-family: 'Merriweather Sans', sans;
+font-size:9px;
+line-height:1.3em; 
+margin-top:9px;
+margin-bottom:9px;
+}
+
+.newsletterpage_author_name {
+font-weight:bold;
+}
+
+.newsletterpage_issue_date {
+font-size: 11px;
+color: #999999;
+margin-bottom: 9px;
+}
+
+/* Explore Resources Page */
+
+.wp-tag-cloud {
+list-style-position: inside;
+}
+
+/* Misc Typography */
+
+blockquote, q {
+  quotes: none; 
+  font-style: normal;
+  }
+
+
+.entry blockquote > p {
+  font-style: normal;
+  }
+
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+  content: none; 
+  display:none;}
+    
+  /* Ninja Form Table Editor styles */
+.entry table thead th {
+padding:0 !important;
+text-transform:none;
+}
+
+.entry table tbody tr:last-child td {
+border-bottom:1px solid #eee;
+}
+
+  .entry table tbody tr:last-child td {
+border-right:1px solid #eee;
+}
+
+#table_168 > div.ht_clone_top.handsontable > div > div > div > table > thead > tr > th:nth-child(3) {
+border-right:4px solid #eee;
+border-top-right-radius:4px;
+}  
+
+/* ACF styles for Resource data entry on WP admin area */
+
+/* DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go below this line */
+	}
